@@ -199,6 +199,7 @@ def big_shoe_rebounds
   
   game_hash.each do |home_or_away, team_hash|
     team_hash[:players].each do |player_index|
+      big_shoe ||= 
       if player_index[:shoe] > big_shoe
         big_shoe = 
 end
